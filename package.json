@@ -1,18 +1,24 @@
 {
   "name": "midway-tencent-cloud-sms",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "midwayjs tencent cloud sms component",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "build": "cross-env midway-bin build -c",
+    "build": "cross-env midway-bin build -c -V",
     "test": "cross-env midway-bin test --ts",
     "cov": "cross-env midway-bin cov --ts",
     "lint": "mwts check",
     "lint:fix": "mwts fix"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "midway",
+    "midwayjs",
+    "component",
+    "sms",
+    "tencent-cloud"
+  ],
+  "author": "wflixu",
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
