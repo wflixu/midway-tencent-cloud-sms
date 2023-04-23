@@ -1,6 +1,7 @@
-import { MidwayConfig } from '@midwayjs/core';
+import { MidwayConfig } from "@midwayjs/core";
 
 export default {
-  key:'tencent-cloud-sms-default',
-  
+  tencentCloudSms: {
+    
+  },
 } as MidwayConfig;

@@ -1,3 +1,11 @@
+export interface TencentCloudSmsConfig {
+  secretId: string;
+  secretKey: string;
+  region: string;
+  SmsSdkAppId: string;
+  SignName: string;
+  TemplateId: string;
+}
 export interface ISendSmsParam {
   /* 短信应用ID: 短信SmsSdkAppId在 [短信控制台] 添加应用后生成的实际SmsSdkAppId，示例如1400006666 */
   // 应用 ID 可前往 [短信控制台](https://console.cloud.tencent.com/smsv2/app-manage) 查看
@@ -24,21 +32,21 @@ export interface ISendSmsParam {
 }
 
 export interface IPullSmsSendStatusParam {
-   // 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
-   SmsSdkAppId: string,
-   // 拉取最大条数，最多100条
-   Limit: number,
+  // 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
+  SmsSdkAppId: string;
+  // 拉取最大条数，最多100条
+  Limit: number;
 }
 export interface ISendStatusStatisticsParam {
-   // 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
-   SmsSdkAppId: string,
-   // 拉取最大条数，最多100条
-   Limit: number,
-   // 偏移量 注：目前固定设置为0
-   Offset: number,
-   // 开始时间，yyyymmddhh 需要拉取的起始时间，精确到小时
-   BeginTime: string,
-   // 结束时间，yyyymmddhh 需要拉取的截止时间，精确到小时
-   // 注：EndTime 必须大于 BeginTime
-   EndTime: string,
+  // 短信应用ID: 短信SdkAppId在 [短信控制台] 添加应用后生成的实际SdkAppId，示例如1400006666
+  SmsSdkAppId: string;
+  // 拉取最大条数，最多100条
+  Limit: number;
+  // 偏移量 注：目前固定设置为0
+  Offset: number;
+  // 开始时间，yyyymmddhh 需要拉取的起始时间，精确到小时
+  BeginTime: string;
+  // 结束时间，yyyymmddhh 需要拉取的截止时间，精确到小时
+  // 注：EndTime 必须大于 BeginTime
+  EndTime: string;
 }
