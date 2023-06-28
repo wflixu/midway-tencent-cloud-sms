@@ -5,6 +5,7 @@ export interface TencentCloudSmsConfig {
   SmsSdkAppId: string;
   SignName: string;
   TemplateId: string;
+  log?:boolean;
 }
 export interface ISendSmsParam {
   /* 短信应用ID: 短信SmsSdkAppId在 [短信控制台] 添加应用后生成的实际SmsSdkAppId，示例如1400006666 */

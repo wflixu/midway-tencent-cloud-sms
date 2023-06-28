@@ -1,6 +1,6 @@
-# midway-tencent-cloud-sms midway 腾讯云短信组件
+# midway 腾讯云短信组件
 
-封装 tencentcloud-sdk-nodejs-sms 成组件，命名空间是 tencentCloudSms
+封装 tencentcloud-sdk-nodejs-sms 成组件，命名空间是 tencentCloudSms 。
 
 # 使用
 
@@ -23,6 +23,7 @@
     SmsSdkAppId: '',
     TemplateId: '',
     SignName: '',
+    log:true, // 调试时设置为true，会打印出配置和请求参数
   },
 ```
 

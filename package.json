@@ -1,6 +1,6 @@
 {
   "name": "midway-tencent-cloud-sms",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "midwayjs tencent cloud sms component",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -16,7 +16,10 @@
     "midwayjs",
     "component",
     "sms",
-    "tencent-cloud"
+    "tencent-cloud",
+    "腾讯云",
+    "短信服务",
+    "middleware"
   ],
   "author": "wflixu",
   "files": [

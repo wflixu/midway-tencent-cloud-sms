@@ -44,7 +44,9 @@ export class SmsService {
       /* 国际/港澳台短信 senderid（无需要可忽略）: 国内短信填空，默认未开通，如需开通请联系 [腾讯云短信小助手] */
       SenderId: "",
     };
-
+    if(this.smsConfig.log){
+      console.log(`发送短信的参数：`, params);
+    }
     return this.client.SendSms(params);
   }
 
